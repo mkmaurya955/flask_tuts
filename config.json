@@ -1,0 +1,18 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/flask",
+    "prod_uri": "mysql+pymysql://root:@localhost/flask",
+    "fb_url": "https://facebook.com/mkmaurya955",
+    "tw_url": "https://twitter.com",
+    "yutube_url": "https://youtube.com",
+    "insta_url": "https://instagram.com",
+    "what_url" : "https://whatsapp.com",
+    "gmail-user" : "mkmaurya955@gmail.com",
+    "gmail-password": "01Oct1994",
+    "about_text": "This is MANISH KUMAR MAURYA. I have my completed my MCA from DR. RAM MANOHAR LOHIA AWADH UNIVERSITY FAIZABAD, UTTAR PRADESH. I have also a knowledge of Language - PHP, PYTHON, DJANGO, FLASK (these are web application framework.) And falimilier with UI(HTML, CSS, JAVASCRIPT, BOOTSTRAP) AND MYSQL, ORACLE.",
+    "no_of_posts": "5"
+
+  }
+}
