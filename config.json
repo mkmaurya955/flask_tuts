@@ -12,7 +12,11 @@
     "gmail-user" : "mkmaurya955@gmail.com",
     "gmail-password": "01Oct1994",
     "about_text": "This is MANISH KUMAR MAURYA. I have my completed my MCA from DR. RAM MANOHAR LOHIA AWADH UNIVERSITY FAIZABAD, UTTAR PRADESH. I have also a knowledge of Language - PHP, PYTHON, DJANGO, FLASK (these are web application framework.) And falimilier with UI(HTML, CSS, JAVASCRIPT, BOOTSTRAP) AND MYSQL, ORACLE.",
-    "no_of_posts": "5"
+    "no_of_posts": "5",
+    "blog_name": "my first blog",
+    "admin_user": "mkmaurya",
+    "admin_password": "mkm12345",
+    "upload_loaction": "C:\\Users\\manish\\PycharmProjects\\flask_tuts\\static"
 
   }
 }
