@@ -49,17 +49,20 @@ class Posts(db.Model):
 
 @app.route("/")
 def home():
-    posts = Posts.query.filter_by().all()
-    last=len(posts)/params[0:3]
-    #[0:3]
-    page=int(request.args.get('page'))
-    if ( not str(page).isnumeric()):
-        page=0
-    #pazination
-    #first
-    if(page==1):
-        prev="#"
-        next="/?page="+ str(page+1)
+     posts = Posts.query.filter_by().all()
+    last = math.ceil(len(posts)/int(params['no_of_posts']))
+    #[0: params['no_of_posts']]
+    #posts = posts[]
+    page = request.args.get('page')
+    if(not str(page).isnumeric()):
+        page = 1
+    page= int(page)
+    posts = posts[(page-1)*int(params['no_of_posts']): (page-1)*int(params['no_of_posts'])+ int(params['no_of_posts'])]
+    #Pagination Logic
+    #First
+    if (page==1):
+        prev = "#"
+        next = "/?page="+ str(page+1)
     elif(page==last):
         prev = "/?page=" + str(page - 1)
         next = "#"
@@ -68,7 +71,9 @@ def home():
         next = "/?page=" + str(page + 1)
 
 
-    return render_template("index.html", params=params, posts=posts)
+
+    return render_template('index.html', params=params, posts=posts, prev=prev, next=next)
+
 
 @app.route("/about")
 def about():
